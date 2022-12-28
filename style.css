@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-color: #FC14D6;
+    --font-family: 'Roboto', sans-serif;
+    --white-color: #fff;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(2, 2, 2)), url(https://external-preview.redd.it/sE0hV3Uv1HO_sUtL9JWe1iqJNm7m4T0RtZ3vQQuBilA.jpg?auto=webp&s=da6a6333d3273ddbea5692e473bdac7cdcbd7e28);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    color: var(--white-color);
+    overflow-x: hidden;
+}
+
+.container {
+   
+    height: 100vh;
+
+}
+
+.container-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin-top: 0vh;
+    text-transform: uppercase;
+    font-size: 3rem;
+    cursor: default;
+}
+
+button {
+    font-family: var(--font-family);
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    background: var(--primary-color);
+    border: none;
+    margin: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+button:hover {
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+
+.container-texto{
+    width: 50%;
+   
+}
+
+h3{
+    font-weight: 400;
+}
+
+#nao:focus {
+    transform: translateY(-100vh);
+}
+
+.ultimo{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-shadow: 0px 0px 3px var(--primary-color);
+    white-space: nowrap;
+}
+
+
+.hide{
+    display: none!important;
+}
+
+@media screen and (max-width :780px) {
+    body{
+        overflow: hidden;
+    }
+   h1{
+    font-size: 1.5rem;
+   } 
+   .buttons{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .ultimo{
+    font-size: 1rem;
+
+   }
+}
